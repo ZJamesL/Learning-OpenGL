@@ -362,6 +362,16 @@ unsigned int create_texture(const char* filepath, unsigned int sWrapMethod, unsi
     return texture;
 }
 
+
+/*
+* Bind buffers - unused funtion for binding buffers. Need to make generic 
+* params:
+*   unsigned int * VBO - pointer to an initialized int pointer for the vertex buffer object(s)
+*   unsigned int * VAO - pointer to an initialized int pointer for the vertex array object(s)
+*   unsigned int * VAO - pointer to an initialized int pointer for the element buffer object(s)
+*   float * vertices - pointer to an array of vertices 
+*   float * indices - pointer to an array of indices to index into vertices 
+*/
 void bindBuffers(unsigned int * VBO, unsigned int * VAO, unsigned int * EBO, float* vertices, unsigned int* indices) {
     // set up the VBO, VAO ;
     glGenVertexArrays(1, VAO);
